@@ -46,6 +46,68 @@
                 <button class="asociate" type="submit">ASOCIATE</button>
             </form>
         </div>
+
+        <div class="modal" tabindex="-1" id="modalContacto"  >
+            
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+                      <div class="Cxit " id="Cxit1" >El Mensaje a sido enviado </div>
+                    <span class="cerrar-modal">&times;</span>
+                    
+                    <div class="modal-header text-center" style="background-image: linear-gradient(to bottom, #f0a61e, #8e8f8d);">
+                        <div >
+                            <p class="fs-5 text-center">POWERGYM</p>
+                      
+                            <p class="fs-2 text-center">¡Envíanos un mensaje!</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend ">
+                                        <div class="input-group-text"></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend ">
+                                        <div class="input-group-text"><i class="bi bi-card-heading"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="bi bi-envelope"></i></div>
+                                    </div>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@mail.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="bi bi-chat"></i></div>
+                                    </div>
+                                    <textarea class="form-control" id="mensaje" placeholder="Mensaje" required></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                                <button type="button" class="btn" id="si">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
     
     <section>
@@ -142,6 +204,103 @@
       
     </section>
 
+<style>            
+.ccol {
+color: #ebb216; 
+text-align: center;
+margin-top: 45px; 
+}
+.Cxit{
+ position: absolute;
+background-color: #52e617;
+width: 25vw;
+height: 10vh;
+right: 38%;
+top: 38%;
+text-align: center;
+text-justify: distribute;
+ text-shadow: #8e8f8d;
+         }
+.Telco{
+color: #ff040473;
+}
+.Redes{
+color: #f0a61e;
+position: relative;
+left: 100px;
+bottom: 60px;
+font-size: larger;
+}
+
+.contacto{
+ display: relative;
+}
+.btn{
+background-color: #dff70d;
+width: 30vw;
+height: 5vh;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+/* Estilos para el modal */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-body{
+width: 50vw;
+}
+.form-control{
+width: 50vw;
+height: 40px;
+background-image: linear-gradient( #f7c55ad3, #fffffe,#fcfd99);  
+}
+
+.modal-header{
+border-radius: 15%;
+height: 10%;
+text-align: center;
+}
+
+.modal-dialog {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: calc(100vh - 3.5rem);   
+}
+
+.modal-contenido {
+background-color: #f30000;
+margin-top: 20px;
+padding: 20px;
+border: 1px solid #888;
+width: 100%;
+
+}
+
+.cerrar-modal {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+</style>
 
     <footer>
         <div class="contenedor-footer">
@@ -152,11 +311,15 @@
                 </p>
             </div>
             <div class="contacto">
-            <h2> Contacto</h2>
-                <p>sede caballito <br>
-                av rivadavia 3015 <br>
-                tel- 5353-5400</p>
-                <h4>seguinos en nuestras redes</h4>
+                <h2  id="abrir-modal"> Contacto</h2>
+            </div>
+             
+                    <div class="ccol">Direccion:<br>
+                            sede caballito 
+                            av rivadavia 3015 <br>
+                           <div class="Telco" !important>Tel- 5353-5400</div> 
+    
+                    </div>
                 <div class="redes-container">
                     <ul>
                         <li><a href="https://facebook.com" target="_blank" class="facebook"> <i class="fab fa-facebook-f"></i></a></li>
@@ -167,6 +330,7 @@
             </div>
             
         </div>
+
         <div class="sub-footer">
             <p> Copyright © 2023 <br> Telf. (+34) 871 536 233
                 - info@gmail.com
@@ -175,7 +339,22 @@
         </div>
     </footer>
 
-    <script src="functions.js"></script>
+    <script src="functions.js">
+$(document).ready(function(){
+    $(".Cxit").hide();
+$("#abrir-modal").click(function()
+    {$("#modalContacto").show();}
+)
+
+}, 
+  $('.cerrar-modal').click( function() {
+    $("#modalContacto").hide();
+    $(".Cxit").hide();
+  }),
+  $("#si").click(function(){$(".Cxit").show();})
+)
+
+    </script>
 
 </body>
 </html>
