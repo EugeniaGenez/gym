@@ -1,4 +1,4 @@
- $(document).ready(function () {
+$(document).ready(function () {
   let estadoOculto = false;
   let pregunta = $("#hidden-text");
   let btn=$("#hidden-btn")
@@ -57,3 +57,21 @@
       estadoOculto4=true;
     }
   })
+  
+//funcion para cards
+
+$(document).ready(function(){
+  $(".Cxit").hide();
+$("#abrir-modal").click(function()
+  {$("#modalContacto").show();}
+)
+
+
+}, 
+$('.cerrar-modal').click( function() {
+  $("#modalContacto").hide();
+  $(".Cxit").hide();
+}),
+//$("#si").click(function(){$(".Cxit").show();})
+)
+

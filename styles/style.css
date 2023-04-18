@@ -27,7 +27,7 @@ header .logo {
 }
 
 header img {
-  width: 70px;
+  width: 120px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -67,6 +67,7 @@ header a:hover {
   background-size: 100%;
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 }
 
 .titulo {
@@ -132,7 +133,7 @@ header a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 250px;
+  height: 500px;
   background-color: rgb(0, 0, 0);
   padding: 50px 0px;
 }
@@ -153,10 +154,35 @@ header a:hover {
   align-items: center;
 }
 
+
+.is-invalid {
+  border: 1px solid red;
+}
+.invalid-feedback {
+  color: red;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .sobrenosotros h2,
 .contacto h2 {
   font-size: 40px;
-  color: white;
+  color: rgb(250, 250, 250);
+}
+
+.contacto h2:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
 }
 
 .contacto h4 {
@@ -230,6 +256,89 @@ header a:hover {
   padding: 10px 0px;
 }
 
+.ico {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.Cxit {
+  position: absolute;
+  background-color: #52e617;
+  width: 150px;
+  height: 80px;
+  left: 35%;
+  top: 40%;
+  text-align: center;
+  text-justify: distribute;
+  text-shadow: #8e8f8d;
+  z-index: 2;
+}
+
+.btn1 {
+  background-color: #dff70d;
+  width: 30vw;
+  height: 5vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-body {
+  width: 500px;
+}
+
+.form-control {
+  height: 40px;
+  background-image: linear-gradient(rgba(247, 197, 90, 0.8274509804), #fffffe, #fcfd99);
+}
+
+.modal-header {
+  height: 100px;
+  text-align: center;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-contenido {
+  background-color: #f30000;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+}
+
+.cerrar-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* presentacion */
 .presentacion {
   display: grid;
@@ -242,6 +351,7 @@ header a:hover {
   background-size: 100%;
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 }
 
 .titulo {
@@ -512,47 +622,69 @@ span {
 
 .slider-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 30px;
 }
 
-.position {
-  position: static;
-  border-radius: 50px;
+.container-img {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.slider {
-  background-image: url(../../assets/1.jfif);
-  background-size: cover;
-  width: 550px;
-  height: 800px;
-  animation: animate 30s infinite;
-  width: 50%;
+.container-img > img {
+  width: 20%;
+  padding: 5px;
 }
 
-@keyframes animate {
-  30% {
-    background-image: url("../../assets/1.jfif");
-    background-size: cover;
-  }
-  50% {
-    background-image: url("../../assets/2.jfif");
-    background-size: cover;
-    background-position: center;
-  }
-  70% {
-    background-image: url("../../assets/3.jfif");
-    background-size: cover;
-  }
-  90% {
-    background-image: url("../../assets/8.jfif");
-    background-size: cover;
-  }
-  110% {
-    background-image: url("../../assets/9.jfif");
-    background-size: cover;
-  }
+/*
+.position{
+    position: static;
+    border-radius: 50px;
+
+
+
 }
+.slider{
+    background-image: url(../../assets/1.jfif);
+    background-size: cover;
+    width: 550px;
+    height: 800px;
+    animation: animate 30s infinite;
+    width: 50%;
+
+
+}
+@keyframes animate{
+    30%{
+        background-image: url("../../assets/1.jfif");
+        background-size: cover;
+
+    }
+    50%{
+        background-image: url("../../assets/2.jfif");
+        background-size: cover;
+        background-position: center;
+
+    }
+    70%{
+        background-image: url("../../assets/3.jfif");
+        background-size: cover;
+    }
+
+    90%{
+        background-image: url("../../assets/8.jfif");
+        background-size: cover;
+    }
+    110%{
+        background-image: url("../../assets/9.jfif");
+        background-size: cover;
+    }
+
+}
+*/
 .container-preguntas {
   display: flex;
   flex-direction: column;
@@ -587,4 +719,80 @@ span {
   padding-bottom: 100px;
   text-align: center;
   font-size: 60px;
+}
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.faqs h1 {
+  padding: 50px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.accordion-button:hover {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  padding: 50px;
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.beneficios-card {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+
+.titulo-beneficios {
+  padding: 50px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.beneficios h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.beneficios-card .card > img {
+  width: 350px;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.card {
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 5px 10px rgb(100, 100, 100);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
