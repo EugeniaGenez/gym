@@ -20,10 +20,11 @@ function getReview(url, reviewSelector, authorSelector, photoSelector) {
 }
 
 // Url para las peticiones ajax agregando la funcion numeroRandom para generar aleatoriamente las distintas reseñas.
-let reviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 32)}.json`;
-let firstReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 32)}.json`;
-let secondReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 32)}.json`;
+let reviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 61)}.json`;
+let firstReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 61)}.json`;
+let secondReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 61)}.json`;
 let thirdReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 32)}.json`;
+
 
 // Se utiliza la funcion getReview para acutalizar los nodos 
 getReview(reviewUrl, '.review', '.author', '.photo');
@@ -33,10 +34,10 @@ getReview(thirdReviewUrl, '.third-review', '.third-author', '.third-photo');
 
 //Funcion encargada de actualizar los datos una vez que se llega al ultimo slide.
 function updateReview() {
-    let reviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 32)}.json`;
-    let firstReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 32)}.json`;
-    let secondReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 32)}.json`;
-    let thirdReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 32)}.json`;
+    let reviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 61)}.json`;
+    let firstReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 61)}.json`;
+    let secondReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 61)}.json`;
+    let thirdReviewUrl = `https://powergym-adm-default-rtdb.firebaseio.com/${numeroRandom(0, 61)}.json`;
 
     getReview(reviewUrl, '.review', '.author', '.photo');
     getReview(firstReviewUrl, '.first-review', '.first-author', '.first-photo');
