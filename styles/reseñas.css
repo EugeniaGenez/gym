@@ -1,8 +1,15 @@
+.seccion-slider{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/Review.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
 .contenedor {
     width: 80%;
     height: 400px;
     overflow: hidden;
-    margin: auto;
+    margin: auto;  
 }
 
 .slider-contenedor {
@@ -32,13 +39,14 @@
     object-fit: cover;
     border-radius: 100%;
     border: 5px solid orange;
-    ;
+    
 }
 
 .review,
 .first-review,
 .second-review,
 .third-review {
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: center;
@@ -49,6 +57,7 @@
 .first-author,
 .second-author,
 .third-author {
+    color: white;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -64,7 +73,8 @@
 .titulo-slider {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: orange;
+    color: white;
+    text-align: center;
 
 }
 
@@ -75,10 +85,9 @@
 }
 
 .logo-titulo {
-    margin-top: -15px;
+    margin-top: -12px;
     margin-right: 10px;
-    height: 50px;
-    width: 50px;
+    
 }
 
 .quote {
@@ -86,20 +95,10 @@
     margin-top: 15px;
 }
 
-#pre-title {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    text-align: center;
-    font-style: italic;
-    font-size: 12px;
-    top: -24px;
-    left: 90px;
 
-}
 
 #span-title {
-    color: black;
+    color: orange;
     font-size: 32px;
 }
 
@@ -107,9 +106,15 @@
     margin-top: -15px;
     margin-right: 10px;
     height: 25px;
-    width: 75px;
+    width: 90px;
     padding-left: 10px;
 }
 .google{
+    color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
 }

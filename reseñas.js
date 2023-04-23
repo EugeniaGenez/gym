@@ -2,24 +2,21 @@
 let numeroRandom = (min, max) =>
     Math.floor(Math.random() * (max - min)) + min;
 
-// Funcion que realiza una peticion ajax a una url dada como parametro y actualiza los elementos recibidos, todo esto lo realiza de forma asincronica sin bloquear la pagina mientras se espera la respuesta de la misma.
+// Funcion que realiza una peticion GET a una url dada como parametro y actualiza los elementos recibidos, todo esto lo realiza de forma asincronica sin bloquear la pagina mientras se espera la respuesta de la misma.
 function getReview(url, reviewSelector, authorSelector, photoSelector) {
-    $.ajax({
-        method: 'GET',
-        url: url,
-        contentType: 'application/json',
-        success: function (result) {
+    fetch(url)
+        .then(response => response.json())
+        .then(result => {
             let quote = document.querySelector(reviewSelector);
             let author = document.querySelector(authorSelector);
             let photo = document.querySelector(photoSelector);
             quote.innerHTML = result.reseñas;
             author.innerHTML = result.autor;
             photo.src = result.foto;
-        },
-        error: function ajaxError(jqXHR) {
-            console.error('Error: ', jqXHR.responseText);
-        }
-    });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
 }
 
 // Url para las peticiones ajax agregando la funcion numeroRandom para generar aleatoriamente las distintas reseñas.
@@ -46,13 +43,14 @@ function updateReview() {
     getReview(secondReviewUrl, '.second-review', '.second-author', '.second-photo');
     getReview(thirdReviewUrl, '.third-review', '.third-author', '.third-photo');
 }
-// La funcion Slices se encarga de proporcionarle un traslado en X hacia la derecha, esto es gracias al operador "-".
+
 let slider = document.querySelector(".slider-contenedor");
 let sliderIndividual = document.querySelectorAll(".slider-test");
 let contador = 1
 let tamanoWidth = sliderIndividual[0].clientWidth;
-let intervalo = 5000;
+let intervalo = 9000;
 
+//Funcion que se encarga de tomar nuevamente el Width del Slider a la hora de realizar un resize a la pagina, con esto el slider queda responsive
 window.addEventListener("resize", function () {
     tamanoWidth = sliderIndividual[0].clientWidth;
 })
@@ -61,6 +59,7 @@ setInterval(function tiempo() {
     slices();
 }, intervalo);
 
+// La funcion Slices se encarga de proporcionarle un traslado en X hacia la derecha, esto es gracias al operador "-".
 function slices() {
     slider.style.transform = 'translate(' + (- tamanoWidth * contador) + 'px)';
     slider.style.transition = 'transform 1s';
