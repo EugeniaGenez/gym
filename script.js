@@ -10,3 +10,4 @@ questions.forEach((question, index) => {
     answers[index].style.display = 'none';
   });
 });
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,302 +10,468 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="reseñas.css">
     <!-- fuente roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6a5a1b02b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://kit.fontawesome.com/6a5a1b02b4.css" crossorigin="anonymous">
     <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <!-- iconos bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-     
+
 </head>
+
 <body>
     <header>
         <div class="container1">
             <div class="container2">
-                <img  src="assets/icono.png" alt="">
-            <p class="logo"> <a href="index.html"></a> POWERGYM</p>
-            <nav>
-                <a href="#id-actividades">Actividades</a>
-                <a href="#id-planes">Planes</a>
-                <a href="#id-faqs">FAQS</a>
-                <a href="#">Shop</a>
-            </nav>
-        </div>
+                <img src="assets/icono.png" alt="">
+                <p class="logo"> <a href="index.html"></a> POWERGYM</p>
+                <nav>
+                
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+  
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav me-auto ">
+                            <li class="nav-item">
+                                
+                                <a href="#id-actividades">Actividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#id-planes">Planes</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#id-faqs">FAQS</a>
+                              
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Shop</a>
+                            </li>
+                          </ul>
+                        </div>
+                   
+                    </nav>
+                </nav>
+            </div>
         </div>
     </header>
-    <section class="presentacion">
-        <div class="titulo">
+    <section class="presentacion ">
+        <div class="titulo ">
             <h1><br> SE MAS FUERTE <br> <span> QUE TUS EXCUSAS</span> </h1>
         </div>
         <div class="subtitulo">
             <p>Comenzá hoy a buscar tu mejor versión</p>
         </div>
         <div class="registro">
-       
+            <!-- <a href="#" target="_blank" rel="noopener noreferrer">ASOCIATE</a> -->
             <form target="_blank">
                 <button class="asociate" type="submit">ASOCIATE</button>
             </form>
         </div>
     </section>
-    
+
     <section id="id-actividades" class="container-fluid">
-        <div class="slider-container col-12">
-            <div class="titulo-actividades">
-                <h3>TODAS LAS <span>
-                ACTIVIDADES</span> <br>
+        <div class="slider-container">
+            <div class="titulo-actividades container">
+                <h3>TODAS LAS <span> <br>
+                        ACTIVIDADES</span> <br>
                     QUE BUSCÁS</h3>
-                <p> Combinar distintas actividades es fundamental para mantener la motivación y disfrutar al máximo tu rutina deportiva. 
-        
+                <p> Combinar distintas actividades es fundamental para mantener la motivación y disfrutar al máximo tu
+                    rutina deportiva.
+
                 </p>
             </div>
-             
-            <div class="container-fluid ">
+
+            <div class="container contenedor-actividades ">
                 <div class="row container-img d-flex">
-                    <img src="assets/boxeo.png"class="" alt="">
-                    <img src="assets/crossfit.png" class="" alt="">
+                    <img src="assets/boxeo.png" class="" alt="">
+                </div>
+                <div class="row container-img d-flex">
+
                     <img src="assets/funcional.png" class="" alt="">
+                </div>
+                <div class="row container-img d-flex">
+
+                    <img src="assets/crossfit.png" class="" alt="">
+                </div>
+                <div class="row container-img d-flex">
+
                     <img src="assets/musculacion.png" class="" alt="">
-               
+                </div>
+
+
+
             </div>
-            
+        </div>
 
-        </div> 
-    
-        
-    </section> 
+    </section>
 
-    <div class="plan-titulo" >
+    <div class="plan-titulo">
         <h3> ELEGI <br> TU PLAN</h3>
         <p id="id-planes">Todo lo que buscás en un solo lugar. <br>
             Estás a un click de distancia de asociarte a la comunidad deportiva mas grande del pais.
         </p>
-        
+
     </div>
     <section class="planes">
-        
+
         <div class="plan-silver">
-            <h3>PLAN <br> SILVER</h3>
+            <h3>SILVER</h3>
             <div class="division"></div>
-            <p>PRECIO <br> $5.500 /mes</p>
-            <form target="_blank">
-                <button onclick="location.href='registro.html'">SUSCRIBITE</button>
-            </form>
+            <p>PRECIO <br> $6000/mes</p>
             <div class="division"></div>
-            <li>Actividades indoor</li>
-            <li>Clases online</li>
-            <li>App nutricion</li>
+            <li>MUSCULACION</li>
+            <li>1 CLASE A LA SEMANA</li>
+            <li>APP RUTINAS</li>
+            <div>
+                <form target="_blank">
+                    <button onclick="location.href='registro.html'">SUSCRIBITE</button>
+                </form>
+            </div>
         </div>
         <div class="plan-gold">
-            <h3>PLAN <br> GOLD</h3>
+            <h3>GOLD</h3>
             <div class="division"></div>
-            <p>PRECIO <br> $7000 /mes</p>
-            <form target="_blank">
-                <button onclick="location.href='registro.html'">SUSCRIBITE</button>
-            </form>
+            <p>PRECIO <br> $12000/mes</p>
+
             <div class="division"></div>
-            <li>Actividades indoor</li>
-            <li>Clases online</li>
-            <li>App nutricion</li>
-            <li>Acceso a todas las sedes</li>
-            <li>Entrenamiento personalizado</li>
+            <li>MUSCULACION</li>
+            <li>3 CLASES A LA SEMANA</li>
+            <li>APP RUTINAS</li>
+            <li>ACCESO A 250 CEDES</li>
+            <li>ACCESO A LA PISCINA</li>
+            <div>
+                <form target="_blank">
+                    <button onclick="location.href='registro.html'">SUSCRIBITE</button>
+                </form>
+            </div>
         </div>
         <div class="plan-platinum">
-            <h3>PLAN <br>PLATINUM</h3>
+            <h3>PLATINUM</h3>
             <div class="division"></div>
-            <p>PRECIO <br> $10.500 /mes</p>
-            <form target="_blank">
-                <button onclick="location.href='registro.html'">SUSCRIBITE</button>
-            </form>
+            <p>PRECIO <br> $19500/mes</p>
+
             <div class="division"></div>
-            <li>Actividades indoor</li>
-            <li>Clases online</li>
-            <li>App nutricion</li>
-            <li>Acceso a todas las sedes</li>
-            <li>Entrenamiento personalizado</li>
-            <li>Plan de alimentacion</li>
-            <li>Apto fisico sin cargo</li>
+            <li>MUSCULACION</li>
+            <li>3 CLASES A LA SEMANA</li>
+            <li>APP RUTINAS</li>
+            <li>ACCESO A 250 CEDES</li>
+            <li>ACCESO A LA PISCINA</li>
+            <li>ENTRENADOR PERSONAL</li>
+            <li>PLAN DE ALIMENTCION</li>
+            <li>APTO FISICO GRATIS</li>
+            <div>
+                <form target="_blank">
+                    <button onclick="location.href='registro.html'">SUSCRIBITE</button>
+                </form>
+            </div>
         </div>
     </section>
-
+   
     <section id="id-beneficios" class="container-fluid beneficios ">
         <div class="container text-center titulo-beneficios ">
             <h1>BENEFICIOS</h1>
             <h2>exclusivos para vos</h2>
         </div>
-        
-        
+
+
         <div class="beneficios-card">
-            <div class="card" id="card-1" >
+            <div class="card" id="card-1">
                 <a href="rutina.html" target="_blank"><img src="assets/rutina.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Rutinas de entrenamiento perzonalidas.</p></a>
-                </div>
+                    <div class="card-body">
+                        <p class="card-text">Rutinas de entrenamiento perzonalidas.</p>
+                </a>
             </div>
+        </div>
         <div class="beneficios-card">
-            <div class="card" id="card-2" >
+            <div class="card" id="card-2">
                 <a href="rutina.html" target="_blank"><img src="assets/shop.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Tienda online con los productos que buscas.</p></a>
-                </div>
+                    <div class="card-body">
+                        <p class="card-text">Tienda online con los productos que buscas.</p>
+                </a>
             </div>
+        </div>
         <div class="beneficios-card">
-            <div class="card" id="card-3" >
+            <div class="card" id="card-3">
                 <a href="rutina.html" target="_blank"><img src="assets/alimentacion.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Plan de alimentacion con recetas y consejos.</p></a>
-                </div>
+                    <div class="card-body">
+                        <p class="card-text">Plan de alimentacion con recetas y consejos.</p>
+                </a>
             </div>
-       
+        </div>
+    
     </section>
 
     <section id="id-faqs" class="container faqs   text-center">
         <h1>Preguntas frecuentes</h1>
         <div class="accordion col-lg-8" id="accordionPanelsStayOpenExample">
             <div class="accordion-item ">
-              <h2 class="accordion-header ">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                    ¿Como registrase?
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
-                <div class="accordion-body">
-                    Para registrarse hacer click <a href="registro.html"> aqui</a>  y completar todos los datos solicitados.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                 ¿Como se abona la cuota mensual?
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    En un Plan Mensual, el primer cargo en tu cuenta se genera al momento de tu alta y corresponde al primer mes de vigencia de tu Plan. La vigencia se renueva de forma automática cada mes el mismo día en el que te diste de alta.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    ¿A partir de que edad puedo ir al gym? 
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    La edad más recomendada para comenzar en el gym es una vez terminado el proceso de desarrollo de la pubertad, entre los 15 y 16 años
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    ¿Como comprar en el shop? 
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    Para comprar un producto en debes ir a <a href="tienda" target="_blank"> Shop</a> y seleccionar el producto que desea comprar
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-<!-- modal -->
-
-        <div class="modal" tabindex="-1" id="modalContacto"  >
-            
-            <div class="modal-dialog modal-dialog-centered">
-
-                <div class="modal-content">
-                      <div class="Cxit " id="Cxit1" >El Mensaje a sido enviado </div>
-                    <span class="cerrar-modal">&times;</span>
-                    
-                    <div class="modal-header text-center" style="background-image: linear-gradient(to bottom, #f0a61e, #8e8f8d);">
-                        <div >
-                            <p class="fs-5 text-center">POWERGYM</p>
-                      
-                            <p class="fs-2 text-center">¡Envíanos un mensaje!</p>
-                        </div>
+                <h2 class="accordion-header ">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        ¿Como registrase?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
+                    <div class="accordion-body">
+                        Para registrarse hacer click <a href="registro.html"> aqui</a> y completar todos los datos
+                        solicitados.
                     </div>
-
-                    <div class="modal-body">
-
-                        <form id="FORMU" novalidate>
-
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend ">
-                                        <div class="input-group-text"><i class="bi bi-person"></i></div>
-                                    </div>
-                                    <input type="text" class="form-control" id="nombre" name="nombre"  >
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend ">
-                                        <div class="input-group-text"><i class="bi bi-card-heading"></i></div>
-                                    </div>
-                                    <input type="text" class="form-control" id="asunto" name="asunto"  >
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="bi bi-envelope"></i></div>
-                                    </div>
-                                    <input type="email" class="form-control" id="email" name="email" >
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="bi bi-chat"></i></div>
-                                    </div>
-                                    <textarea class="form-control" id="mensaje"  ></textarea>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                
-                                <button type="submit"  class="btn1" id="si">Enviar</button>
-                            </div>
-                            <div id="mensaje-exito"></div>
-                        </form>
-
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        ¿Como se abona la cuota mensual?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        En un Plan Mensual, el primer cargo en tu cuenta se genera al momento de tu alta y corresponde
+                        al primer mes de vigencia de tu Plan. La vigencia se renueva de forma automática cada mes el
+                        mismo día en el que te diste de alta.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        ¿A partir de que edad puedo ir al gym?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        La edad más recomendada para comenzar en el gym es una vez terminado el proceso de desarrollo de
+                        la pubertad, entre los 15 y 16 años
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        ¿Como comprar en el shop?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Para comprar un producto en debes ir a <a href="tienda" target="_blank"> Shop</a> y seleccionar
+                        el producto que desea comprar
                     </div>
                 </div>
             </div>
         </div>
- 
+    </section>
+
+    
+   <!-- modal -->
+
+   <div class="modal" tabindex="-1" id="modalContacto"  >
+            
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+              <div class="Cxit " id="Cxit1" >El Mensaje a sido enviado </div>
+            <span class="cerrar-modal">&times;</span>
+            
+            <div class="modal-header text-center" style="background-image: linear-gradient(to bottom, #f0a61e, #8e8f8d);">
+                <div >
+                    <p class="fs-5 text-center">POWERGYM</p>
+              
+                    <p class="fs-2 text-center">¡Envíanos un mensaje!</p>
+                </div>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="FORMU" novalidate>
+
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend ">
+                                <div class="input-group-text"><i class="bi bi-person"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="nombre" name="nombre"  >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend ">
+                                <div class="input-group-text"><i class="bi bi-card-heading"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="asunto" name="asunto"  >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="bi bi-envelope"></i></div>
+                            </div>
+                            <input type="email" class="form-control" id="email" name="email" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="bi bi-chat"></i></div>
+                            </div>
+                            <textarea class="form-control" id="mensaje"  ></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                        <button type="submit"  class="btn1" id="si">Enviar</button>
+                    </div>
+                    <div id="mensaje-exito"></div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
-<footer>
+  
+    <!-- Seccion reseñas  -->
+    <div class="contenedor">
+        <div class="slider-contenedor">
+            <div class="slider-test">
+                <div class="titulo">
+                    <img src="Assets/icono.png" alt="" class="logo-titulo">
+                    <h2 class="titulo-slider">POWER<span id="span-title">GYM</span></h2>
+                </div>
+                <div class="pre-title">
+                    <h4 id="pre-title">RESEÑAS</h4>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+
+                </div>
+                <p class="review"></p>
+                <img src="" alt="" class="photo">
+                <div class="quote">
+                    <i class="fa-solid fa-quote-left fa-2xl" style="color: #ea980b;"></i>
+                </div>
+                <h3 class="author"></h3>
+            </div>
+            <div class="slider-test">
+                <div class="titulo">
+                    <img src="Assets/icono.png" alt="" class="logo-titulo">
+                    <h2 class="titulo-slider">POWER<span id="span-title">GYM</span></h2>
+                </div>
+                <div class="pre-title">
+                    <h4 id="pre-title">RESEÑAS</h4>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                </div>
+                <p class="first-review"></p>
+                <img src="" alt="" class="first-photo">
+                <div class="quote">
+                    <i class="fa-solid fa-quote-left fa-2xl" style="color: #ea980b;"></i>
+                </div>
+                <h3 class="first-author"></h3>
+            </div>
+            <div class="slider-test">
+                <div class="titulo">
+                    <img src="Assets/icono.png" alt="" class="logo-titulo">
+                    <h2 class="titulo-slider">POWER<span id="span-title">GYM</span></h2>
+                </div>
+                <div class="pre-title">
+                    <h4 id="pre-title">RESEÑAS</h4>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                </div>
+                <p class="second-review"></p>
+                <img src="" alt="" class="second-photo">
+                <div class="quote">
+                    <i class="fa-solid fa-quote-left fa-2xl" style="color: #ea980b;"></i>
+                </div>
+                <h3 class="second-author"></h3>
+            </div>
+            <div class="slider-test">
+                <div class="titulo">
+                    <img src="Assets/icono.png" alt="" class="logo-titulo">
+                    <h2 class="titulo-slider">POWER<span id="span-title">GYM</span></h2>
+                </div>
+                <div class="pre-title">
+                    <h4 id="pre-title">RESEÑAS</h4>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                    <i class="fa-solid fa-star fa-beat fa-lg" style="color: #ea980b;"></i>
+                </div>
+                <p class="third-review"></p>
+                <img src="" alt="" class="third-photo">
+                <div class="quote">
+                    <i class="fa-solid fa-quote-left fa-2xl" style="color: #ea980b;"></i>
+                </div>
+                <h3 class="third-author"></h3>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
         <div class="contenedor-footer">
-           <div class="sobrenosotros">
+            <div class="sobrenosotros container">
                 <h2 id="id-nosotros">Sobre Nosotros</h2>
-                <p>somos un gimnasio con grandes aspiraciones, conocimientos sólidos en las actividades que brindamos y mas de 20 años de expeciencia. <br>
-                Nuestra mision es que las personas puedan ejercitarse con pasion y alcanzar sus objetivos individuales
+                <p>somos un gimnasio con grandes aspiraciones, conocimientos sólidos en las actividades que brindamos y
+                    mas de 20 años de expeciencia. <br>
+                    Nuestra mision es que las personas puedan ejercitarse con pasion y alcanzar sus objetivos
+                    individuales
                 </p>
             </div>
-         
-        <div class="contacto">
-            <h2 id="abrir-modal"> Contacto</h2>
+           
+            <div class="contacto container">
+                <h2 id="abrir-modal"> Contacto</h2>
                 <p>sede caballito <br>
-                av rivadavia 3015 <br>
-                tel- 5353-5400</p>
+                    av rivadavia 3015 <br>
+                    tel- 5353-5400</p>
                 <h4>seguinos en nuestras redes</h4>
-                <div class="redes-container">
+                <div class="redes-container container">
                     <ul>
-                        <li><a href="https://facebook.com" target="_blank" class="facebook"> <i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://instagram.com" target="_blank" class="instagram"> <i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com"  target="_blank"class="twitter"> <i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://facebook.com" target="_blank" class="facebook"> <i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://instagram.com" target="_blank" class="instagram"> <i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com" target="_blank" class="twitter"> <i
+                                    class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -316,111 +483,14 @@
             </p>
         </div>
     </footer>
-   
+ 
 
     <script src="functions.js"></script>
-
- <script>
-
-
-
-
-  document.getElementById('FORMU').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const constraints = {
-    nombre: {
-      presence: true,
-      length: {
-        minimum: 3,
-        maximum: 20,
-        message: 'debe tener entre 3 y 20 caracteres'
-      }
-    },
-    asunto: {
-      presence: true
-    },
-    email: {
-      presence: true,
-      email: true
-    },
-   
-  };
-  const form = document.querySelector('#FORMU');
-
-function addError(field, message) {
-  const fieldEl = form.querySelector(`#${field}`);
-  const errorEl = document.createElement('div');
-  errorEl.className = 'invalid-feedback';
-  errorEl.textContent = message;
-  fieldEl.parentNode.insertBefore(errorEl, fieldEl.nextSibling);
-  fieldEl.classList.add('is-invalid');
-}
-
-
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  const nombre = form.querySelector('#nombre').value.trim();
-  const asunto = form.querySelector('#asunto').value.trim();
-  const email = form.querySelector('#email').value.trim();
-  const mensaje = form.querySelector('#mensaje').value.trim();
-
-  if (nombre === '') {
-    addError('nombre', 'Por favor ingrese su nombre.');
-  } else {
-    const fieldEl = form.querySelector('#nombre');
-    fieldEl.classList.remove('is-invalid');
-    const errorEl = fieldEl.nextSibling;
-    if (errorEl && errorEl.className === 'invalid-feedback') {
-      errorEl.parentNode.removeChild(errorEl);
-    }
-  }
-
-  if (asunto === '') {
-    addError('asunto', 'Por favor ingrese el asunto del mensaje.');
-  } else {
-    const fieldEl = form.querySelector('#asunto');
-    fieldEl.classList.remove('is-invalid');
-    const errorEl = fieldEl.nextSibling;
-    if (errorEl && errorEl.className === 'invalid-feedback') {
-      errorEl.parentNode.removeChild(errorEl);
-    }
-  }
-
-  // Validar email usando expresiones regulares
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    addError('email', 'Por favor ingrese un correo electrónico válido.');
-  } else {
-    const fieldEl = form.querySelector('#email');
-    fieldEl.classList.remove('is-invalid');
-    const errorEl = fieldEl.nextSibling;
-    if (errorEl && errorEl.className === 'invalid-feedback') {
-      errorEl.parentNode.removeChild(errorEl);
-    }
-  }
-
-  if (mensaje === '') {
-    addError('mensaje', 'Por favor ingrese el mensaje.');
-  } else {
-    const fieldEl = form.querySelector('#mensaje');
-    fieldEl.classList.remove('is-invalid');
-    const errorEl = fieldEl.nextSibling;
-    if (errorEl && errorEl.className === 'invalid-feedback') {
-      errorEl.parentNode.removeChild(errorEl);
-    }
-  }
-
-  // Si no hay campos inválidos, enviar formulario
-  if (!form.querySelector('.is-invalid')) {
-    $("#mensaje-exito").text("¡Enviado con éxito!");
-   
-  }
-  
-
-});
-});
- </script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="reseñas.js"></script>
 
 </body>
+
 </html>
