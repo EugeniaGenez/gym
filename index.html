@@ -348,72 +348,71 @@
             </div>
         </div>
     </section>
-    <!-- modal -->
+     <!-- modal -->
 
-    <div class="modal" tabindex="-1" id="modalContacto">
+   <div class="modal" tabindex="-1" id="modalContacto"  >
+            
+    <div class="modal-dialog modal-dialog-centered">
 
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+              <div class="Cxit " id="Cxit1" >El Mensaje a sido enviado </div>
+            <span class="cerrar-modal">&times;</span>
+            
+            <div class="modal-header text-center" style="background-image: linear-gradient(to bottom, #f0a61e, #8e8f8d);">
+                <div >
+                    <p class="fs-5 text-center">POWERGYM</p>
+              
+                    <p class="fs-2 text-center">¡Envíanos un mensaje!</p>
+                </div>
+            </div>
 
-            <div class="modal-content">
-                <div class="Cxit " id="Cxit1">El Mensaje a sido enviado </div>
-                <span class="cerrar-modal">&times;</span>
+            <div class="modal-body">
 
-                <div class="modal-header text-center"
-                    style="background-image: linear-gradient(to bottom, #f0a61e, #8e8f8d);">
-                    <div>
-                        <p class="fs-5 text-center">POWERGYM</p>
+                <form id="FORMU" novalidate>
 
-                        <p class="fs-2 text-center">¡Envíanos un mensaje!</p>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend ">
+                                <div class="input-group-text"><i class="bi bi-person"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" >
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend ">
+                                <div class="input-group-text"><i class="bi bi-card-heading"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="bi bi-envelope"></i></div>
+                            </div>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="bi bi-chat"></i></div>
+                            </div>
+                            <textarea class="form-control" id="mensaje"  placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                        <button type="submit"  class="btn1" id="si">Enviar</button>
+                    </div>
+                    <div id="mensaje-exito"></div>
+                </form>
 
-                <div class="modal-body">
-                    <form>
-
-                        <div class="form-group">
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend ">
-                                    <div class="input-group-text"><i class="bi bi-person"></i></div>
-                                </div>
-                                <input type="text" class="form-control" id="nombre" name="nombre"
-                                    placeholder="Nombre y Apellido" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend ">
-                                    <div class="input-group-text"><i class="bi bi-card-heading"></i></div>
-                                </div>
-                                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto"
-                                    required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="bi bi-envelope"></i></div>
-                                </div>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="ejemplo@mail.com" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="bi bi-chat"></i></div>
-                                </div>
-                                <textarea class="form-control" id="mensaje" placeholder="Mensaje" required></textarea>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-
-                            <button type="button" class="btn1" id="si">Enviar</button>
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- style modal  -->
     <!-- <style>            
