@@ -13,11 +13,12 @@
     display: flex;
 }
 .contenedor-izq{
-    background-color: #24303c;
+    background-color: white;
     height:100vh ;
     width: 50%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .contenedor-header{
@@ -28,6 +29,7 @@
     
 }
 .contenedor-plan{
+    font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,23 +41,23 @@
 i{
     font-size: 40px;
     padding-left: 20px;
-    color:rgb(113, 128, 214);
+    color: orange;
 }
 i:hover{
     font-size: 45px;
     color:black;
 }
 h4{ 
-    
+    color: orange;
     width: 100%;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     margin: 10px;
 }
 .container-registro{
     display: flex;
-    background-color: #24303c;
-    margin: 0px 2px;
+    background-color: white;
+    margin: 2px;
     
 }
 .formulario{
@@ -63,10 +65,8 @@ h4{
     align-items: center;
     display: flex;
     width: auto;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px;
-    width: auto;   
+    margin: 10px;   
     color: white;
 }
 input,select{
@@ -77,22 +77,22 @@ input,select{
     padding-left: 20px;
     font-size: 15px;
     margin: 8px 10px;
-    background-color: #24303c;
-    border: 1px solid #1f53c5;
-    border-radius: 10px;
+    background-color: black;
+    border: 1px solid orange;
+    border-radius: 20px;
 
 }
 select{
-    text-align: center;
+    text-align: left;
     width: 40%;
     height: 45px;
 }
 .formulario > .btn{ 
     margin-top: 20px;
-    pad: 0;
+    padding: 10px;
     height: 50px;
     font-size: 20px;
-    background-color: #1f53c5;
+    background-color: orange;
 }
 .btn:hover{
     background-color: white;
@@ -102,12 +102,13 @@ select{
 }
 .division{
     border: 1px solid rgb(255, 255, 255);
-    
     display: flex;
     
 }
 .contenedor-der{
-    background-color: #24303c;
+    background-color: black;
+    background-image: url(assets/1.jfif);
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
@@ -127,8 +128,59 @@ select{
     align-items: center;
 }
 
-.img1{
-    
-    height: 50vh;
-    padding: 10px;
+.btn{
+    background-color: orange;
 }
+
+.lista ul {
+    list-style: square;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(255, 255, 255, 0.178);
+  }
+  
+  .lista li {
+    padding: 10px;
+    border-bottom: 1px solid orange;
+    color: whitesmoke;
+    font-weight: 200;
+  }
+  
+
+@media screen and (max-width: 768px) {
+    .contenedor-principal {
+      flex-direction: column;
+    }
+    .contenedor-izq {
+      width: 100%;
+      height: auto;
+    }
+    .contenedor-der {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    h4 {
+      font-size: 24px;
+    }
+    .formulario input[type="text"], 
+    .formulario input[type="number"], 
+    .formulario input[type="email"], 
+    .formulario select {
+      width: 100%;
+      margin: 5px 0;
+    }
+    .btn {
+      width: 80%;
+      text-align: center;
+    }
+    .plataforma{
+        font-size: 14px;
+    }
+  }
+  
